@@ -5,17 +5,22 @@ import about1 from '../assets/images/about1.jpg';
 import about2 from '../assets/images/about2.jpg';
 import about3 from '../assets/images/about3.jpg';
 import about4 from '../assets/images/about4.jpg';
-import point from "../assets/images/point.jpg"
+import point from "../assets/images/point.jpg";
 
 const HeroSection = () => (
   <div className="Home md:min-h-[88vh] mt-10 lg:mt-0 flex flex-col justify-center items-center max-w-full">
-    <div className="flex flex-col items-center text-center">
+    <div className="flex flex-col items-center text-center animate-fadeInUp">
       <div className="text-secondary text-2xl font-semibold mb-2 font-mono">RUPESH SAHA</div>
-      <div className="sm:text-7xl text-5xl font-bold text-gray-700 mb-4 flex flex-col">
+      <div className="sm:text-7xl text-5xl font-bold text-gray-700 mb-4 flex flex-col ">
         <span>I am a FullStack</span>
         <span>Web Developer</span>
       </div>
-      <button className="px-8 py-4 mt-2 border-2 border-secondary text-gray-700 hover:text-white hover:bg-secondary hover:scale-105 duration-300 font-semibold rounded-md transition">
+      <button 
+      onClick={()=>{
+        const element = document.querySelector(".About")
+        element.scrollIntoView({ behavior: 'smooth' });
+      }}
+      className="px-6 py-3 font-medium bg-secondary text-white w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]">
         GET STARTED
       </button>
     </div>
