@@ -31,12 +31,12 @@ const PerksSection = () => {
 
   return (
     <div className="grid grid-cols-12 p-4 gap-5">
-      <div className="lg:col-span-2 col-span-1"></div>
-      <div className="lg:col-span-8 col-span-10 grid grid-cols-1 md:grid-cols-3 gap-5 border-b-2 border-secondary pb-12">
+      <div className="lg:col-span-2 "></div>
+      <div className="lg:col-span-8 col-span-12 grid grid-cols-1 md:grid-cols-3 gap-5 border-b-2 border-secondary pb-12">
         {perks.map(({ Icon, title, description }, index) => (
           <div
             key={index}
-            className="hover:border-secondary border-2 p-8 rounded-md bg-gray-100 text-left flex flex-col gap-4 duration-500 shadow-md"
+            className="sm:border-primary hover:border-secondary border-2  border-secondary p-8 rounded-md bg-gray-100 text-left flex flex-col gap-4 duration-500 shadow-md"
           >
             <Icon size={42} style={{ color: "var(--secondary-color)" }} />
             <h2 className="text-2xl font-bold border-b-secondary border-b-2 py-2">{title}</h2>
@@ -44,7 +44,7 @@ const PerksSection = () => {
           </div>
         ))}
       </div>
-      <div className="lg:col-span-2 col-span-1"></div>
+      <div className="lg:col-span-2 "></div>
     </div>
   );
 };
@@ -60,9 +60,9 @@ const AboutSection = () => {
 
   return (
     <div className="p-4 About">
-      <div className="grid grid-cols-12 p-4 gap-4">
-        <div className="lg:col-span-2 col-span-1"></div>
-        <div className="col-span-10 lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 border-b-2 border-secondary pb-12">
+      <div className="grid grid-cols-12 lg:p-4 p-0 gap-4">
+        <div className="lg:col-span-2 "></div>
+        <div className="col-span-12 lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 border-b-2 border-secondary pb-12">
           <h2 className="text-3xl font-bold mb-4 col-span-3 text-secondary">About me</h2>
       
 
@@ -79,7 +79,7 @@ const AboutSection = () => {
             </div>
           ))}
         </div>
-        <div className="lg:col-span-2 col-span-1"></div>
+        <div className="lg:col-span-2 "></div>
       </div>
     </div>
   );
@@ -121,9 +121,9 @@ const ServicesSection = () => {
 
   return (
     
-      <div className="grid grid-cols-12 Services">
-        <div className="md:col-span-2 col-span-1"></div>
-        <div className="md:col-span-8 col-span-10 grid grid-cols-3 gap-4 border-b-2 border-secondary pb-12">
+      <div className="grid grid-cols-12 Services md:p-0 p-4 ">
+        <div className="md:col-span-2 "></div>
+        <div className="md:col-span-8 col-span-12 grid grid-cols-3 gap-4 border-b-2 border-secondary pb-12">
           <h1 className="text-3xl font-bold mb-4 col-span-3 text-secondary">My Services</h1>
         {services.map(({title, description, Icon},index)=>(
           <div key={index} className="md:col-span-1 col-span-3 rounded-md hover:border-secondary hover:scale-105 hover:shadow-2xl duration-300 border-2 p-4 shadow-md bg-gray-100 gap-4">
@@ -133,7 +133,7 @@ const ServicesSection = () => {
           </div>
         ))}
         </div>
-        <div className="md:col-span-2 col-span-1"></div>
+        <div className="md:col-span-2"></div>
       </div>
     
   )
@@ -176,9 +176,9 @@ const WorksSection = () => {
 
   return (
     
-    <div className="Work grid grid-cols-12 mt-12">
-      <div className="md:col-span-2 col-span-1"></div>
-      <div className="md:col-span-8 col-span-10 grid grid-cols-3 gap-4 border-b-2 border-secondary pb-12">
+    <div className="Work grid grid-cols-12 mt-12 md:p-0 p-4 ">
+      <div className="md:col-span-2 "></div>
+      <div className="md:col-span-8 col-span-12 grid grid-cols-3 gap-4 border-b-2 border-secondary pb-12">
         <h1 className="text-3xl font-bold mb-4 col-span-3 text-secondary">My Works</h1>
       {works.map(({title, description, Icon},index)=>(
         <div key={index} className="md:col-span-1 col-span-3 rounded-md hover:border-secondary hover:scale-105 hover:shadow-2xl duration-300 border-2 p-4 shadow-md bg-gray-100 gap-4">
@@ -188,7 +188,7 @@ const WorksSection = () => {
         </div>
       ))}
       </div>
-      <div className="md:col-span-2 col-span-1"></div>
+      <div className="md:col-span-2"></div>
     </div>
   
 )
@@ -215,7 +215,7 @@ const ContactSection = () => {
   ];
 
   return (
-    <div className="Work grid grid-cols-12 mt-12 px-4">
+    <div className="Contact grid grid-cols-12 mt-12 px-4">
       <div className="md:col-span-2 col-span-1"></div>
       <div className="md:col-span-8 col-span-10 grid grid-cols-4 gap-6 border-b-2 border-secondary pb-12">
         <h1 className="text-3xl font-bold mb-4 col-span-4 text-secondary text-center">

@@ -53,10 +53,10 @@ const Navbar = () => {
     </div>
     {
         isMenuBarOpen && (  
-           <div className="flex flex-col sm:hidden gap-4 text-2xl items-center justify-center   border-secondary border-2 p-8 px-6 w-1/2 h-1/3 rounded-md fixed top-0 right-0 bg-primary  shadow-md z-40">
+           <div className="flex flex-col sm:hidden gap-4 text-2xl items-center justify-center   border-secondary border-2 p-8 px-6 w-1/2 h-1/2 rounded-md fixed top-0 right-0 bg-primary  shadow-md z-40">
             <button 
             onClick={()=>{setIsMenuBarOpen(false)}}
-            className="fixed right-2 top-2"><X size={36}/></button>
+            className="fixed right-2 top-2"><X size={28}/></button>
         {['Home', 'About', 'Services', 'Work', 'Contact'].map((item) => (
           <a
             key={item}
